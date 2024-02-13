@@ -9,8 +9,8 @@ spawn(function()
         task.wait()
     until game.Players.LocalPlayer and game.Players.LocalPlayer.Team ~= nil 
     wait(1.5)
-    require(game.ReplicatedStorage.Notification).new("<Color=Red> Welcome To AFX Hub <Color=/>"):Display()
-    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Discord : Join AfxcaxiRoblox's Discord to Get the Latest Information <Color=/>"):Display()
+    require(game.ReplicatedStorage.Notification).new("<Color=Red> Welcome To NTB Hub <Color=/>"):Display()
+    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>Discord : Join NTB HUB Discord to Get the Latest Information <Color=/>"):Display()
 end)
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
