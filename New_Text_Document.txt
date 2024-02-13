@@ -24,8 +24,8 @@ local InterfaceManager =
 local Window =
     Fluent:CreateWindow(
     {
-        Title = "AFX Hub",
-        SubTitle = "Skid And Setup By AfxcaxiRoblox",
+        Title = "NTB Hub",
+        SubTitle = "tư bản đẹp zai vui tính",
         TabWidth = 160,
         Size = UDim2.fromOffset(530, 350),
         Acrylic = true,
@@ -36,14 +36,14 @@ local Window =
 local Tabs = {
     Discord = Window:AddTab({Title = "H? So", Icon = ""}),
     Main = Window:AddTab({Title = "Main", Icon = "home"}),
-    Setting = Window:AddTab({Title = "C�i �?t", Icon = "settings"}),
+    Setting = Window:AddTab({Title = "Cài Ð?t", Icon = "settings"}),
     Stats = Window:AddTab({Title = "Ch? S?", Icon = "plus-circle"}),
     Player = Window:AddTab({Title = "Player", Icon = "baby"}),
-    Teleport = Window:AddTab({Title = "�?o", Icon = "palmtree"}),
-    Fruit = Window:AddTab({Title = "Tr�i C�y", Icon = "cherry"}),
+    Teleport = Window:AddTab({Title = "Ð?o", Icon = "palmtree"}),
+    Fruit = Window:AddTab({Title = "Trái Cây", Icon = "cherry"}),
     Raid = Window:AddTab({Title = "Raid", Icon = "swords"}),
     Race = Window:AddTab({Title = "T?c V4", Icon = "chevrons-right"}),
-    Shop = Window:AddTab({Title = "C?a H�ng", Icon = "shopping-cart"}),
+    Shop = Window:AddTab({Title = "C?a Hàng", Icon = "shopping-cart"}),
     Misc = Window:AddTab({Title = "Misc", Icon = "list-plus"}),
     Hop = Window:AddTab({Title = "Hop", Icon = "wifi"})
 }
@@ -51,13 +51,13 @@ local Options = Fluent.Options
 do
     Tabs.Discord:AddButton(
         {
-            Title = "Copy Link Discord AfxcaxiRoblox",
-            Description = "https://discord.gg/yZDRPEVXtz",
+            Title = "Copy Link Discord NTB HUB",
+            Description = "https://discord.com/invite/vEMN9mNM",
             Callback = function()
-                setclipboard("https://discord.gg/yZDRPEVXtz")
+                setclipboard("https://discord.com/invite/vEMN9mNM")
                 Fluent:Notify(
                     {
-                        Title = "AFX Hub",
+                        Title = "NTB Hub",
                         Content = "Copied!",
                         SubContent = "", -- Optional
                         Duration = 5 -- Set to nil to make the notification not disappear
@@ -68,13 +68,13 @@ do
     )
     Tabs.Discord:AddButton(
         {
-            Title = "Copy Link Youtube AfxcaxiRoblox",
-            Description = "https://www.youtube.com/channel/UCppExFlPUorGZNKXp8GFtmw",
+            Title = "Copy Link Youtube",
+            Description = "chưa có",
             Callback = function()
-                setclipboard("https://www.youtube.com/channel/UCppExFlPUorGZNKXp8GFtmw")
+                setclipboard("chưa có")
                 Fluent:Notify(
                     {
-                        Title = "AFX Hub",
+                        Title = "NTB Hub",
                         Content = "Copied!",
                         SubContent = "", -- Optional
                         Duration = 5 -- Set to nil to make the notification not disappear
@@ -10212,7 +10212,7 @@ Tabs.Misc:AddButton(
             Fragments.Parent = game:GetService("Players").LocalPlayer.PlayerGui.Main.Beli
             Fragments.Position = UDim2.new(0, 0, -0.75, 0)
             Fragments.Size = UDim2.new(1, 0, 1, 0)
-            Fragments.Text = "�" .. formatNumber(game:GetService("Players").LocalPlayer.Data.Fragments.Value)
+            Fragments.Text = "" .. formatNumber(game:GetService("Players").LocalPlayer.Data.Fragments.Value)
             local args = {
                 [1] = "getAwakenedAbilities"
             }
