@@ -50,7 +50,6 @@ getgenv().config = {
 
     auto_fail_catch = nil,
        
-    high_jump =nil,
 
 }
 
@@ -1962,43 +1961,13 @@ rod_multiplier:AddToggle("Toggle", {
 
 })
 
-user_sec:AddToggle("Toggle", {
 
-    Title = "high jump",
-
-    Default = getgenv().config.high_jump or false,
-
-    Callback = function(Value)
-
-        getgenv().config.high high_jump = Value
-     local player = game.Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-local humanoid = character:WaitForChild("Humanoid")
-
-
-humanoid.JumpPower = 100 -- Giá trị mặc định là 50, bạn có thể điều chỉnh theo ý muốn.
-
-
-local function onJumpRequest()
-    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-end
-
-game:GetService("UserInputService").JumpRequest:Connect(onJumpRequest)
-                end
-
-            end
-
-        end)
-
-    end
-
-})
 
 Window:SelectTab(1)
 
 Fluent:Notify({
 
-    Title = "AnhNguyenthebao Fish",
+    Title = "depzai",
 
     Content = "Executed!",
 
