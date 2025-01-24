@@ -173,7 +173,7 @@ TextButton.Text = "A"
 
 TextButton.TextColor3 = Color3.new(1, 1, 1)
 
-TextButton.TextSize = 20
+TextButton.TextSize = 50
 
 
 
