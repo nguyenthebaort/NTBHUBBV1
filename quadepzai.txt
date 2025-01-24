@@ -49,7 +49,7 @@ getgenv().config = {
     remove_fog = nil,
 
     auto_fail_catch = nil,
-       end
+       
     high_jump =nil,
 
 }
