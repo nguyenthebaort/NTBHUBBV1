@@ -1975,22 +1975,24 @@ user_sec:AddToggle("Toggle", {
 local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character:WaitForChild("Humanoid")
 
--- Tăng sức mạnh nhảy
+
 humanoid.JumpPower = 100 -- Giá trị mặc định là 50, bạn có thể điều chỉnh theo ý muốn.
 
--- Thêm sự kiện nhảy
+
 local function onJumpRequest()
     humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 end
 
 game:GetService("UserInputService").JumpRequest:Connect(onJumpRequest)
- end
+                end
+
+            end
+
+        end)
 
     end
 
 })
-
-    
 
 Window:SelectTab(1)
 
