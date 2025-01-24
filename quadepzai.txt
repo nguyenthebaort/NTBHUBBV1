@@ -49,6 +49,8 @@ getgenv().config = {
     remove_fog = nil,
 
     auto_fail_catch = nil,
+       end
+    high_jump =nil,
 
 }
 
@@ -1960,7 +1962,35 @@ rod_multiplier:AddToggle("Toggle", {
 
 })
 
+user_sec:AddToggle("Toggle", {
 
+    Title = "high jump",
+
+    Default = getgenv().config.high_jump or false,
+
+    Callback = function(Value)
+
+        getgenv().config.high high_jump = Value
+     local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+-- Tăng sức mạnh nhảy
+humanoid.JumpPower = 100 -- Giá trị mặc định là 50, bạn có thể điều chỉnh theo ý muốn.
+
+-- Thêm sự kiện nhảy
+local function onJumpRequest()
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+end
+
+game:GetService("UserInputService").JumpRequest:Connect(onJumpRequest)
+ end
+
+    end
+
+})
+
+    
 
 Window:SelectTab(1)
 
