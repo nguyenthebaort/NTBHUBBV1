@@ -805,8 +805,7 @@ Fluent:Notify({
     Title = "Fearise Hub",
     Content = "Anti AFK Is Actived",
     Duration = 5
-})
-
+}) 
 Window:SelectTab(1)
 local cjson = require "cjson"
 local http = require "resty.http"
@@ -846,7 +845,6 @@ local discord_payload = {
         }
     }}
 }
-
 local res, err = httpc:request_uri(discord_webhook_url, {
     method = "POST",
     body = cjson.encode(discord_payload),
@@ -854,10 +852,8 @@ local res, err = httpc:request_uri(discord_webhook_url, {
         ["Content-Type"] = "application/json"
     }
 })
-
 if not res then
     ngx.log(ngx.ERR, "Failed to send Discord webhook: ", err)
 end
-
 ngx.say(cjson.encode({status = "success", message = "User logged & sent to Discord", ip = client_ip}))
 
